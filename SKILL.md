@@ -17,7 +17,7 @@ This skill guides NanoCortex on executing precise, token-optimized queries again
 - NEVER generate raw HTTP commands (`curl`), shell scripts, or invent fake API gateways.
 
 ### 2. CRITICAL: Spare Parts Lookup Logic ("spare" Device) ⚠️
-- **Core Convention:** In NetBox, all spare/stock hardware components (such as RAM modules, SFP optical transceivers, disks, power supplies, expansion cards) are **assigned to a dedicated placeholder device named `spare` (or `spare-*` like `spare-tehran-dc`)**.
+- **Core Convention:** In NetBox, all spare/stock hardware components (such as RAM modules, SFP optical transceivers, disks, power supplies, expansion cards) are **assigned to a dedicated placeholder device named `spare`**.
 - **Execution Workflow for Spare Queries:**
   When a user asks about spare parts, stock inventory, or available spare components (e.g., *"چند تا رم یا SFP اسپر داریم؟"*):
   1. **Direct Target:** Go directly to `dcim/inventory-items` attached to the device named `spare` (or devices whose name starts with `spare`).
